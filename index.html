@@ -1,0 +1,63 @@
+---
+layout: default
+robots: noindex
+---
+
+<!--<div class="main-post-list">-->
+<div id="ListaProjects" >
+  <ul class="timeline">
+    
+    {% for project in site.data.projects %}
+
+      <li class="timeline-inverted">
+        <div class="timeline-image">
+          <img class="img-me" src="{{ project.img | prepend: site.baseurl }}" alt="">
+        </div>
+        <div class="timeline-panel">
+          <div class="timeline-heading">
+            <h4><a href="https://github.com/{{ project.gh_user }}/{{ project.repo }}" target="_blank">{{ project.name }}</a></h4>
+          </div>
+          <div class="timeline-body">
+            {{ project.desc | markdownify }}
+            <div user="{{ project.gh_user }}" repo="{{ project.repo }}" class="ghbtn" style="margin-top: 10px;">
+              <a target="_blank" href="https://github.com/{{ project.gh_user }}/{{ project.repo }}/stargazers"><i class="fa fa-star"></i><span class="star"> ...</span></a>&emsp;&emsp;
+              <a target="_blank" href="https://github.com/{{ project.gh_user }}/{{ project.repo }}/network"><i class="fa fa-code-fork"></i><span class="fork"> ...</span></a>&emsp;&emsp;
+              <a target="_blank" href="https://github.com/{{ project.gh_user }}/{{ project.repo }}/watchers"><i class="far fa-eye"></i><span class="watchers"> ...</span></a>
+              <div style="height: 10px;"></div>
+          </div>
+        </div>
+      </li>
+    {% endfor %}
+    <!--
+    <li class="timeline-inverted">
+      <div class="timeline-image">
+        <img class="user-image" src="{{site.baseurl}}{{ site.timeline-img }}" alt="">
+      </div>
+    </li> -->
+  </ul>
+  <!-- </div> -->
+</div>
+<div id="ListaExperiences">
+  <ul class="timeline">
+    {% for experience in site.data.experiences %}
+
+      <li class="timeline-inverted">
+        <div class="timeline-image">
+          <img class="img-me" src="{{ experience.img | prepend: site.baseurl }}" alt="">
+        </div>
+        <div class="timeline-panel">
+          <div class="timeline-heading">
+            <!-- <h4><a href="https://github.com/{{ experience.gh_user }}/{{ experience.repo }}" target="_blank">{{ experience.name }}</a></h4> -->
+            <h4>{{ experience.name }}</h4>
+            <h5>{{ experience.puesto }}</h5>
+            <h5>{{ experience.fecha }}</h5>
+          </div>
+          <div class="timeline-body">
+            {{ experience.desc | markdownify }}
+              <div style="height: 10px;"></div>
+          </div> 
+        </div>
+      </li>
+    {% endfor %}
+  </ul>
+</div>

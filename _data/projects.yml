@@ -1,0 +1,9 @@
+# projects section data
+# If you don't have language feature(language.yml is empty), ignore "i18n" items
+# Suggest projects' img be located at '/static/assets/img/landing', and edit following img items.
+- name: Jekyll Theme
+  gh_user: rubiopitxi
+  repo: rubiopitxi.github.io
+  img: https://raw.githubusercontent.com/rubiopitxi/rubiopitxi.github.io/master/screenshot-overview.png
+  desc: This Jekyll Theme. Based on the Uno-Theme with a list of projects as timeline. Like a business card.
+
