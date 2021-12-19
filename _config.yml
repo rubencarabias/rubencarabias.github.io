@@ -2,20 +2,20 @@
 title: Rubén Carabias Muñoz
 description: 'Business Card Page'
 #url: ''
-#baseurl: ''
+baseurl: 'https://rubencarabias.github.io'
 profilepic: '/images/1516978780859.jfif'
 bkimage: '/images/cover.jpg'
-google_analytics: G-57R01B48WL
+google_analytics: G-WJN65C1ZFT
 font_awesome: 'fd24312f53.js'
 
 author:
   name: 'Rubén Carabias Muñoz'
   linkedin_username:  ruben-carabias-muñoz-79bba6bb
-# github_username:  rubiopitxi 
+# github_username:  rubencarabias 
 # meetup_name: Azure-Meetup-Rostock-MV
-#  email: info@thomas-zuehlke.de
-#  twitter_username: rubiopitxi
-#  facebook_username: rubiopitxi
+email: rubencarabias.primerob@gmail.com
+#  twitter_username: rubencarabias
+#  facebook_username: rubencarabias
 
 
 
