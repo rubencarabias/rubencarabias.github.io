@@ -28,14 +28,10 @@ $(document).ready(function () {
   $('a.panel-button').click(function (e) {
     
     if ($('.content-wrapper').hasClass('showing')){
-      window.location.hash = $('#' + e.target.id).attr("href");
-      // $('.content-wrapper').removeClass('animated slideInRight');
-      // $('.panel-cover').removeClass('panel-cover--collapsed');
-      // $('.panel-cover').css('max-width', '100%');
-      // $('.panel-cover').animate({'width': '100%'}, 400, swing = 'swing', function () {});
-      //$('.content-wrapper').removeClass('showing');
-      //window.location.hash = '';
-      //parent.location.hash = '';
+      //window.location.hash = $('#' + e.target.id).attr("href");
+      // if (window.location.hash && (window.location.hash != '#projects' || (window.location.hash != '#experiences'))){
+      //       CerrarMenu();
+      //       }
       e.preventDefault();
       return;
     }
@@ -66,27 +62,12 @@ $(document).ready(function () {
     LimpiarListados();
     $('#ListaProjects').removeClass('displayNone');
     $('#ListaProjects').addClass('displayAuto');
-
-    if ($('.content-wrapper').hasClass('showing')){
-      if (window.location.hash && 
-        (window.location.hash == '#projects' || (window.location.hash == '#/#projects'))){
-        CerrarMenu();
-      }
-    }
   })
-
+  
   $('#experiences-button').click(function () {
     toggleMobileMenu();
     LimpiarListados();  
     $('#ListaExperiences').removeClass('displayNone');
     $('#ListaExperiences').addClass('displayAuto');
-    
-    if ($('.content-wrapper').hasClass('showing')){
-      if (window.location.hash && 
-        (window.location.hash == '#experiences' || window.location.hash == '#/#experiences')){
-        CerrarMenu();
-      }
-    }
   })
-
 })
